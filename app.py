@@ -28,8 +28,8 @@ st.markdown("### Where music meets tranquility.")
 
 st.subheader("Latest Release")
 
-# Using the iframe method for your specific video ID: OWp1OS-DBz-9Uadk
-video_id = "OWp1OS-DBz-9Uadk"
+# Using your new video ID: nAz4uF2aVC8
+video_id = "nAz4uF2aVC8"
 embed_url = f"https://www.youtube.com/embed/{video_id}"
 
 st.markdown(
