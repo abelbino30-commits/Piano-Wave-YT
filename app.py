@@ -7,17 +7,12 @@ st.set_page_config(page_title="Piano Wave", page_icon="🎹")
 st.markdown(
     """
     <style>
-    /* Set the main background to black */
     .stApp {
         background-color: #000000;
     }
-    
-    /* Ensure all text is white for readability */
     h1, h2, h3, p, div {
         color: #FFFFFF !important;
     }
-    
-    /* Make the container centered and clean */
     .block-container {
         max-width: 700px;
         padding-top: 2rem;
@@ -32,8 +27,19 @@ st.title("🎹 Piano Wave")
 st.markdown("### Where music meets tranquility.")
 
 st.subheader("Latest Release")
-# Replace the URL below with one of your actual video links
-st.video("https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE")
+
+# Using the iframe method for your specific video ID: OWp1OS-DBz-9Uadk
+video_id = "OWp1OS-DBz-9Uadk"
+embed_url = f"https://www.youtube.com/embed/{video_id}"
+
+st.markdown(
+    f"""
+    <iframe width="100%" height="400" src="{embed_url}" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    """, 
+    unsafe_allow_html=True
+)
 
 st.markdown("---")
 
