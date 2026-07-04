@@ -1,32 +1,41 @@
 import streamlit as st
 
 # Page Configuration
-st.set_page_config(page_title="Piano Wave YT", page_icon="🎹")
+st.set_page_config(page_title="Piano Wave", page_icon="🎹")
 
-# Centering the content
-st.title("🎹 Piano Wave YT")
-st.markdown("### Where music meets tranquility.")
-
-# Embed your YouTube Channel/Video
-# Note: st.video works best with direct video links. 
-# If you want to link your channel, we can use a button.
-st.subheader("Latest Release")
-st.video("https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE")
-
-st.markdown("---")
-
-# Direct Call to Action
-st.write("Love the vibes? Check out the full channel:")
-st.link_button("Go to Piano Wave YT YouTube Channel", "https://youtube.com/@pianowaveyt1")
-
-# Optional: Add some custom styling to make it look professional
+# Custom CSS for a clean black background
 st.markdown(
     """
     <style>
+    /* Set the main background to black */
     .stApp {
-        background-color: #fcfcfc;
+        background-color: #000000;
+    }
+    
+    /* Ensure all text is white for readability */
+    h1, h2, h3, p, div {
+        color: #FFFFFF !important;
+    }
+    
+    /* Make the container centered and clean */
+    .block-container {
+        max-width: 700px;
+        padding-top: 2rem;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
+
+# Content
+st.title("🎹 Piano Wave")
+st.markdown("### Where music meets tranquility.")
+
+st.subheader("Latest Release")
+# Replace the URL below with one of your actual video links
+st.video("https://www.youtube.com/watch?v=YOUR_VIDEO_ID_HERE")
+
+st.markdown("---")
+
+st.write("Love the vibes? Check out the full channel:")
+st.link_button("Go to Piano Wave YouTube Channel", "https://youtube.com/@pianowaveyt1")
