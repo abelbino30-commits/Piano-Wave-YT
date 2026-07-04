@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Page Configuration
-st.set_page_config(page_title="Piano Wave", page_icon="🎹")
+st.set_page_config(page_title="Piano Wave YT", page_icon="🎹")
 
 # Custom CSS for a clean black background
 st.markdown(
@@ -23,7 +23,7 @@ st.markdown(
 )
 
 # Content
-st.title("🎹 Piano Wave")
+st.title("🎹 Piano Wave YT")
 st.markdown("### Where music meets tranquility.")
 
 st.subheader("Latest Release")
@@ -44,4 +44,4 @@ st.markdown(
 st.markdown("---")
 
 st.write("Love the vibes? Check out the full channel:")
-st.link_button("Go to Piano Wave YouTube Channel", "https://youtube.com/@pianowaveyt1")
+st.link_button("Go to Piano Wave YT YouTube Channel", "https://youtube.com/@pianowaveyt1")
